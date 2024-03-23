@@ -70,21 +70,25 @@ header a{
 
 }
 
-.first_container img{
+.img_container1{
     display: flex;
     width: 60%;
     height: auto;
+    flex-direction: column;
+}
+
+.img_container1 img{
     margin: 32px 24px;
-
-
 }
 
 .first_content{
     display: flex;
-    flex: 1;
+
     flex-direction: column;
     justify-content: center;
     font-size: 30px;
+    width: 40%;
+    height: auto;
 
 }
 
@@ -121,8 +125,18 @@ header a{
     }
 }
 @media only screen and (max-width: 767px) {
-    .first_container img{
-        display: none;
+
+    .first_container{
+        flex-direction: column;
+    }
+
+    .img_container1{
+        display: flex;
+        width: 100%;
+
+    }
+    .img_container1 img{
+        margin: 0 0;
     }
 
     .first_container{
@@ -151,3 +165,313 @@ header a{
     }
 
 }
+
+/* second container */
+
+.second_container{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.img_container{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.img_container img{
+    margin: 32px 24px;
+}
+
+.img_container h2, p {
+    margin-left: 24px;
+}
+
+.img_container p{
+    margin-top: 24px;
+    color: grey;
+}
+
+.img_container p:last-child{
+    margin-bottom: 32px;
+    color: black;
+}
+
+.small_con{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-top: 32px;
+}
+
+.cards{
+    display: flex;
+    border: 2px solid lightgray;
+}
+
+.cards:hover{
+    background-color: lightgray;
+}
+
+.cards img{
+    width: 35%;
+    height: auto;
+    margin: 16px;
+
+}
+
+.mobile{
+    display: none;
+}
+
+.card_content{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.card_content p:first-child{
+    font-weight: bold;
+    font-size: 2rem;
+    color: dimgrey;
+}
+
+.card_content p{
+    margin-bottom: 8px;
+    margin-left: 0;
+    margin-top: 0;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 767px) {
+    .img_container{
+        display: none;
+    }
+
+    .not_mobile{
+        display: none;
+    }
+
+    .small_con{
+        width: 100%;
+        height: auto;
+    }
+    .cards{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .mobile{
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+   .mobile img{
+       width: 100%;
+       margin: 16px 16px;
+       height: auto;
+   }
+
+    .card_content{
+        width: 100%;
+    }
+
+    .card_content p{
+        font-size: 0.8rem;
+        margin-left: 32px;
+    }
+
+    .card_content p:first-child{
+        margin-left: 32px;
+        font-size: 1rem;
+    }
+
+    .card_content a{
+        margin-left: 32px;
+        font-size: 0.8rem;
+        margin-bottom: 64px;
+    }
+}
+
+.third_container{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: lightgray;
+}
+
+.third_container h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.card_container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 72px;
+    justify-content: space-between;
+    padding: 32px;
+
+}
+
+.learning_card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 532px;
+    width: auto;
+    margin-bottom: 32px;
+    background-color: white;
+    justify-content: space-between;
+    height: auto;
+}
+
+.learning_card img{
+    height: auto;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.learning_card p:first-of-type{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.learning_card p{
+    margin-bottom: 8px;
+    margin-left: 16px;
+}
+.learning_card p:last-child{
+    margin-bottom: 24px;
+}
+
+@media only screen and (max-width: 767px){
+    .third_container{
+        background-color: white;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+
+    }
+    .third_container h2{
+        margin-bottom: 16px;
+    }
+
+    .card_container{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin: 0 0;
+        padding: 0 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .learning_card{
+        width: 100%;
+        height: auto;
+        background-color: lightgray;
+        margin: 8px;
+    }
+
+    .learning_card img{
+        display: none;
+    }
+
+    .learning_card p:first-of-type{
+        display: flex;
+        margin-top: 16px;
+        margin-left: 16px;
+        margin-bottom: 24px;
+        font-weight: normal;
+    }
+
+    .learning_card p{
+        display: none;
+    }
+}
+
+
+.img_container video{
+    margin: 32px 24px;
+}
+
+.img_container h3{
+    margin-bottom: 8px;
+    margin-left: 24px;
+}
+
+.fourth_container h2{
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 767px) {
+    .fourth_container .small_con{
+        display: none;
+    }
+
+    .fourth_container .img_container{
+        display: flex;
+        width: 100%;
+    }
+    .fourth_container .img_container h3,p{
+        display: none;
+    }
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    margin-bottom: 32px;
+    border: 2px grey;
+}
+
+ .reserved{
+    margin-left: 24px;
+    color: grey;
+    font-size: small;
+}
+
+.footer_links{
+    margin-left: auto;
+    margin-right: 24px;
+
+}
+
+footer a{
+    text-decoration: none;
+    color: grey;
+    font-size: small;
+}
+
+@media only screen and (max-width: 767px) {
+    .footer_links{
+        display: none;
+    }
+
+    .reserved{
+        display: flex;
+        text-align: center;
+    }
+}
+
