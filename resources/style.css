@@ -432,7 +432,10 @@ header a{
         display: flex;
         width: 100%;
     }
-    .fourth_container .img_container h3,p{
+    #txt{
+        display: none;
+    }
+    #tet{
         display: none;
     }
 }
@@ -443,16 +446,20 @@ footer{
     height: auto;
     align-items: center;
     margin-bottom: 32px;
-    border: 2px grey;
+
 }
 
+
+
  .reserved{
-    margin-left: 24px;
-    color: grey;
-    font-size: small;
+     display: flex;
+     margin-left: 24px;
+     color: grey;
+     font-size: small;
 }
 
 .footer_links{
+    width: auto;
     margin-left: auto;
     margin-right: 24px;
 
@@ -469,9 +476,17 @@ footer a{
         display: none;
     }
 
+    footer{
+        justify-content: center;
+        align-items: center;
+    }
+
     .reserved{
         display: flex;
         text-align: center;
+        height: 20px;
+        width: 100%;
+        color: grey;
     }
 }
 
